@@ -32,7 +32,7 @@
 
 
 4) What is MongoShell?
-    It is  Javascript shell that allows interaction with mongoDb instance from command line.
+    It is Javascript shell that allows interaction with mongoDb instance from command line.
 
 
 5) What is Indexing ?
