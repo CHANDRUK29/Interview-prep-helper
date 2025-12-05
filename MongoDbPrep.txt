@@ -224,6 +224,8 @@
 
             
 26) unwind Operator vs reduce Operator?
+    the $unwind stage is used inside an aggregation pipeline to deconstruct (flatten) an array field so that each element 
+    of the array becomes its own document.
     $unwind is an aggregation pipeline stage, which deconstructs the output by each element in a array
     (i.e) Used to deconstruct an array field in a document and create separate output documents for item in array.
 
