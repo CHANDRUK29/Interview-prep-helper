@@ -1,6 +1,8 @@
 1) What is React?
+    React is a JavaScript library used for building user interfaces, especially interactive 
+    and dynamic web applications. It was developed by Facebook (Meta).
     React is a open-source, component based frontend library which is responsible
-    for view layer of the application. It was initially developed by facebook.
+    for view layer of the application.
     Main objective of react is to develop user interfaces that improves the speed
     of the apps.
 
