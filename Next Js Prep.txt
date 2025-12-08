@@ -30,6 +30,28 @@ Link : https://github.com/mrhrifat/nextjs-interview-questions
         This enhances performance by reducing initial bundle sizes.
     *)API Routes: Easily create serverless functions by defining API routes alongside your pages, simplifying the development of server-side logic.
 
+4) List some common performance optimization techniques in Next.js.
+        *)Use static generation (SSG) for pages that can be pre-rendered.
+        *)Implement incremental static regeneration (ISR) for dynamic content.
+        *)Use the next/image component for optimized images.
+        *)Enable code splitting and tree shaking.
+        *)Use dynamic imports for large components.
+        *)Optimize CSS with CSS modules or styled-components.
+        *)Leverage caching strategies for API routes.
+
+
+5) Mention some common security practices in Next.js.
+        *)Use HTTPS for secure communication.
+        *)Implement authentication and authorization.
+        *)Sanitize user input to prevent XSS attacks.
+        *)Use environment variables for sensitive data.
+        *)Regularly update dependencies to patch vulnerabilities.
+        *)Implement Content Security Policy (CSP) headers.
+        *)Use secure cookies with HttpOnly and Secure flags.
+
+
+
+
 
 
 
