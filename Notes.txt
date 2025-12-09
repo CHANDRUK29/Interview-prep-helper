@@ -111,8 +111,8 @@ what is React Js?
 
 
 what is Docker?
-	Docker is an open-source platform that allows you to build, package, and run applications in lightweight, 
-	portable containers.
+	Docker is a platform that uses containers to make application development, deployment,
+	and scaling easier, faster, and more consistent.
 
 
 what is container?
