@@ -49,6 +49,16 @@
 			Function Scope: Variables declared with var inside a function.
 			Block Scope: Variables declared with let or const inside a block (e.g., if, for).
 
+
+3) C)what is event propagation?
+		Event propagation is the overall process of how an event travels through the DOM.
+
+	Diff b/w event bubbling and capturing
+		Event capturing is when the event moves from the root down to the target.
+		Event bubbling is when the event moves from the target back up to the root.
+
+	what is event delegation?
+		Event delegation is attaching a single event listener to a parent element and handling child events using event bubbling
 	
 
 4) What is Callback Hell?
