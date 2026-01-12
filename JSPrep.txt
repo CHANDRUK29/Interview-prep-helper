@@ -59,7 +59,13 @@
 
 	what is event delegation?
 		Event delegation is attaching a single event listener to a parent element and handling child events using event bubbling
-	
+
+3) D) ASYNC vs DEFER?
+Both async and defer allow the HTML parsing process to continue without waiting for the script to be downloaded.
+The difference lies in when the script is executed:
+With async, the script executes as soon as it's downloaded, potentially before the HTML document is fully parsed. 
+With defer, the script executes only after the HTML document is fully parsed, but before the DOMContentLoaded event.
+
 
 4) What is Callback Hell?
 	Callback Hell, also known as "Pyramid of Doom", refers to a situation where multiple nested 
