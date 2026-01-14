@@ -1,0 +1,4 @@
+1) What are Micro FrontEnd?
+      Micro frontends (MFEs) is a web development architecture where a large frontend application is broken down into smaller,
+      independent, and deployable modules, each responsible for a specific business feature, allowing different teams to build,
+      test, and deploy them autonomously, often using different technologies, mirroring the microservices approach for the backend
