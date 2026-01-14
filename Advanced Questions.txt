@@ -11,25 +11,12 @@
             *)Shared dependencies (like React) are not duplicated
             *)Each app can be deployed on its own
       Core Concepts of Webpack module Federation:
-            1)Host (Shell / Container):
-                  The main app
-                  Loads remote applications
-                  Decides when and where to render them
-            2)Remote:
-                  A separate app
-                  Exposes modules (components, utilities, pages)
-                  Built & deployed independently
-            3)Exposes:
-                  What a remote app makes available to others.
-                  (eg)exposes: {
-                                "./Cart": "./src/Cart"
-                              }
-            4)Shared:
-                  Dependencies shared across apps (e.g. React).
-                  (EG) shared: {
-                                      react: { singleton: true },
-                                    "react-dom": { singleton: true }
-                              }
+            *)Host: The application currently running in the browser that consumes modules from another application.
+            *)Remote: A separate application that exposes modules (components, functions, etc.) for the Host to consume.
+            *)Exposed Module: A specific file or component made available by a Remote to be used by other applications.
+            *)Shared Module: A dependency (like React or Vue) that is shared across applications to avoid code duplication.
+            *)Runtime: Code is loaded while the application is running in the user's browser, not during the build process. 
+         
 
 
 
