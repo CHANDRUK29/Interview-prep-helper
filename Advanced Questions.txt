@@ -38,10 +38,14 @@
             to improve performance, particularly for animation, layout, and user interactions 
 
 
+7) What is lifting state up?
+            Moving shared state to the closest common parent so multiple components can access and modify it.
+            
 
-
-
-
+8) Difference between useEffect and useLayoutEffect?
+            The fundamental difference between useEffect and useLayoutEffect is timing: 
+            useEffect runs asynchronously after the browser has painted the screen, 
+            while useLayoutEffect runs synchronously before the browser paints. 
 
 
 
