@@ -2,3 +2,51 @@
       Micro frontends (MFEs) is a web development architecture where a large frontend application is broken down into smaller,
       independent, and deployable modules, each responsible for a specific business feature, allowing different teams to build,
       test, and deploy them autonomously, often using different technologies, mirroring the microservices approach for the backend
+
+2) What Is Webpack Module Federation?
+      Webpack Module Federation (introduced in Webpack 5) allows multiple independent JavaScript applications to share code at runtime.
+      With Module Federation (the new world):
+            *)Apps are independent
+            *)They talk to each other at runtime
+            *)Shared dependencies (like React) are not duplicated
+            *)Each app can be deployed on its own
+      Core Concepts of Webpack module Federation:
+            1)Host (Shell / Container):
+                  The main app
+                  Loads remote applications
+                  Decides when and where to render them
+            2)Remote:
+                  A separate app
+                  Exposes modules (components, utilities, pages)
+                  Built & deployed independently
+            3)Exposes:
+                  What a remote app makes available to others.
+                  (eg)exposes: {
+                                "./Cart": "./src/Cart"
+                              }
+            4)Shared:
+                  Dependencies shared across apps (e.g. React).
+                  (EG) shared: {
+                                      react: { singleton: true },
+                                    "react-dom": { singleton: true }
+                              }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
