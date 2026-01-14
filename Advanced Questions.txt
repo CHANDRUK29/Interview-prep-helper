@@ -17,8 +17,50 @@
             *)Shared Module: A dependency (like React or Vue) that is shared across applications to avoid code duplication.
             *)Runtime: Code is loaded while the application is running in the user's browser, not during the build process. 
 
+
 3) What is Redux Toolkit Query(RTK)?
-            RTK Query is an advanced data fetching and caching tool, designed to simplify common cases for loading data in a web application
+            RTK Query is an advanced data fetching and caching tool, designed to simplify common cases for loading data in 
+            a web application
+
+
+4) What is concurrent Rendering?
+            Concurrent rendering in React is a foundational update introduced in React 18 that allows React to interrupt a 
+            long-running rendering task to handle high-priority tasks, such as user input, without blocking the main thread
+
+
+5) What is reconciliation in React?
+            Reconciliation is React’s process of comparing the previous Virtual DOM tree with the new Virtual DOM tree 
+            to determine the minimal set of changes required to update the real DOM.
+
+
+6) Explain React Fiber architecture?
+            React Fiber is a complete re-implementation of React's core reconciliation algorithm, introduced in React 16 
+            to improve performance, particularly for animation, layout, and user interactions 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
