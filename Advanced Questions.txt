@@ -16,7 +16,9 @@
             *)Exposed Module: A specific file or component made available by a Remote to be used by other applications.
             *)Shared Module: A dependency (like React or Vue) that is shared across applications to avoid code duplication.
             *)Runtime: Code is loaded while the application is running in the user's browser, not during the build process. 
-         
+
+3) What is Redux Toolkit Query(RTK)?
+            RTK Query is an advanced data fetching and caching tool, designed to simplify common cases for loading data in a web application
 
 
 
