@@ -53,6 +53,9 @@
       on the server.
 
 
+10) Synthetic Events in ReactJS
+            Synthetic events in React are cross-browser wrappers around the browser's original event.
+            It is designed to provide a consistent, cross-browser interface for handling events in React applications.
 
 
 
@@ -80,7 +83,7 @@
 
 
 
-
+=============================================================================================================
 
 
 
