@@ -48,8 +48,9 @@
             while useLayoutEffect runs synchronously before the browser paints. 
 
 
-
-
+9) What is purpose of hydration?
+            Hydration is simply the process of attaching JavaScript behavior to HTML elements that have been generated 
+      on the server.
 
 
 
