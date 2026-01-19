@@ -37,6 +37,17 @@
             Runtime failures - Remote down = feature broken
             Version conflicts - Bad shared config = subtle bugs
 
+2) B) When Microfrontend Apps Crash ?
+            *)The remote becomes down,slow, deployed incorrectly or blocked by CDN/Network
+                  Solution:
+                        Error boundaries
+                        Fallback UI
+                        Health checks
+            *) Version mismatch in shared dependencies
+            *) Bad Module Federation configuration - Wrong exposed path,Remote name mismatch,Incorrect URL
+            *) Sharing state or globals incorrectly
+            *) CSS & DOM collisions - Global CSS leaks,Reset styles override other apps.
+
 
 3) What is Redux Toolkit Query(RTK)?
             RTK Query (Redux Toolkit Query) is a powerful data fetching and caching solution built into the official Redux 
