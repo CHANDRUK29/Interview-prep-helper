@@ -159,6 +159,34 @@ src/
                   Atomic Design organizes by UI type, not business capability
 
 
+15) React 19 Issue?
+            The most significant recent issues in React 19 are a set of critical security vulnerabilities (CVEs)
+            in React Server Components and various migration difficulties/breaking changes related to API removals
+            and peer dependency mismatches
+      A)What Exactly Happened ?
+            React 19 introduced a new system for React Server Components (RSC). 
+            This system sends special data streams from the server to the browser. 
+            This data describes how to build the UI.
+            Hackers discovered that: They could inject malicious commands into this stream. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
