@@ -2,6 +2,17 @@
       Micro frontends (MFEs) is a web development architecture where a large frontend application is broken down into smaller,
       independent, and deployable modules, each responsible for a specific business feature, allowing different teams to build,
       test, and deploy them autonomously, often using different technologies, mirroring the microservices approach for the backend
+      PROS:
+            Teams release features without waiting on others
+            Different frameworks or versions can coexist
+            Teams can work in parallel with fewer conflicts
+      CONS:
+            Multiple JS bundles
+            Duplicate dependencies (React, lodash)
+            Slower initial load if not optimized
+            State management is hard
+            Multiple repos & Multiple CI/CD pipelines
+
 
 2) What Is Webpack Module Federation?
       Webpack Module Federation (introduced in Webpack 5) allows multiple independent JavaScript applications to share code at runtime.
@@ -99,9 +110,33 @@
                   This final stage allows for testing the design system with actual data.
                   Examples: HomePage
 
+Atmoic Design Structure Example:
+src/
+|-- components/
+|   |-- atoms/
+|   |   |-- Button.js
+|   |   ...
+|   |-- molecules/
+|   |   |-- SearchBar.js
+|   |   ...
+|   |-- organisms/
+|   |   |-- Header.js
+|   |   ...
+|   |-- templates/
+|   |   |-- HomepageTemplate.js
+|   |   ...
+|-- pages/
+|   |-- HomePage.js
+|   ...
 
-
-
+            PROS:
+                  Prevents duplication when many features share UI patterns
+                  Atoms and molecules are easy to unit test
+                  Encourages reuse of the same base components everywhere
+                  Forces you to think in terms of “building blocks”
+            CONS:
+                  Small or medium projects may not need this much structure
+                  Atomic Design organizes by UI type, not business capability
 
 
 
