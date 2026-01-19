@@ -19,8 +19,9 @@
 
 
 3) What is Redux Toolkit Query(RTK)?
-            RTK Query is an advanced data fetching and caching tool, designed to simplify common cases for loading data in 
-            a web application
+            RTK Query (Redux Toolkit Query) is a powerful data fetching and caching solution built into the official Redux 
+            Toolkit (RTK) package. It is designed to simplify common data loading scenarios in web applications, 
+            eliminating the need to hand-write data fetching and caching logic yourself. 
 
 
 4) What is concurrent Rendering?
