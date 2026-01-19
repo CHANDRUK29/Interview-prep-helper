@@ -59,8 +59,10 @@
             It is designed to provide a consistent, cross-browser interface for handling events in React applications.
 
 
-
-
+11) App UI freezes during heavy computation in reactjs?
+            UI freezes in React are typically caused by heavy, synchronous computations blocking the browser's main thread.
+            To prevent this, you should offload the heavy work to a separate thread using a Web Worker or use React's 
+            built-in performance optimization techniques like useTransition and memoization. 
 
 
 
