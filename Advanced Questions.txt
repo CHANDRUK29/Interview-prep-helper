@@ -77,9 +77,27 @@
             but the component rendering will not wait for the non-urgent state updates.
 
 
-
-
-
+14) Atomic Design in React:
+            Atomic design is a methodology for creating design systems by breaking down user interfaces
+            into their fundamental building blocks. This pattern provides a structured,
+            hierarchical way to organize components, enhancing reusability, maintainability, and scalability.
+            1. Atoms:
+                  Atoms are the smallest, indivisible building blocks of a UI, often corresponding to single HTML elements or simple React components
+                  Examples: Buttons, input fields, labels, icons, color palettes, and fonts.
+            2. Molecules:
+                  Molecules are simple combinations of atoms that function as a unit. 
+                  Examples: A search bar (input and button) or a form field (label and input)
+            3. Organisms:
+                  Organisms are more complex components made up of molecules and atoms. 
+                  Examples: A navigation bar (logo, search bar, links) or a login form.
+            4. Templates:
+                  Templates define the layout and structure of pages using organisms. 
+                  They represent the content structure without the final content.
+                  Examples: HomePageTemplate
+            5. Pages:
+                  Pages are specific instances of templates where real content is added. 
+                  This final stage allows for testing the design system with actual data.
+                  Examples: HomePage
 
 
 
