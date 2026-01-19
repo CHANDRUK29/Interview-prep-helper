@@ -70,7 +70,11 @@
             a user action, assuming the server operation will succeed, rather than waiting for the server's response.
 
 
-
+13) What is the use of useTransition hook in React?
+            The useTransition hook is included in React 18 to tackle this situation. 
+            With this hook, you can specify any state updates as non-urgent. '      
+            These non-urgent state updates will occur simultaneously with other urgent state updates, 
+            but the component rendering will not wait for the non-urgent state updates.
 
 
 
