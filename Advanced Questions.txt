@@ -65,9 +65,9 @@
             built-in performance optimization techniques like useTransition and memoization. 
 
 
-
-
-
+12) What is Optmistic UI Updates?
+            Optimistic UI updates are a design pattern where the user interface (UI) is updated immediately after
+            a user action, assuming the server operation will succeed, rather than waiting for the server's response.
 
 
 
