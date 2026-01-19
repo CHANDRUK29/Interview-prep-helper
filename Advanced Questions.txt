@@ -28,6 +28,15 @@
             *)Shared Module: A dependency (like React or Vue) that is shared across applications to avoid code duplication.
             *)Runtime: Code is loaded while the application is running in the user's browser, not during the build process. 
 
+      Pros of Module Federation:
+            Independent deployments - Update one app without rebuilding others
+            Runtime code sharing - No npm publishing required
+            Smaller bundles - Shared libraries loaded once
+
+      Cons of Module Federation:
+            Runtime failures - Remote down = feature broken
+            Version conflicts - Bad shared config = subtle bugs
+
 
 3) What is Redux Toolkit Query(RTK)?
             RTK Query (Redux Toolkit Query) is a powerful data fetching and caching solution built into the official Redux 
