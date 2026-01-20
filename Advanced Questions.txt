@@ -177,13 +177,37 @@ src/
             Only render the items that are visible on the screen, plus a few extra (“overscan”), instead of rendering the entire list.
 
 
+17) What is server side rendering (SSR)?
+            Server-Side Rendering (SSR) is a technique where a web page's content is generated as fully-formed HTML on the server first,
+            then sent to the user's browser, resulting in faster initial loads, better SEO, and improved accessibility 
+            compared to Client-Side Rendering (CSR)
 
 
+18) What is React Server Components?
+            React Server Components (RSCs) are a new architecture in React that allows developers to run components and fetch data
+            exclusively on the server, resulting in improved performance and smaller client-side JavaScript bundles.
 
 
+19) performance optimization techniques in react?
+            Avoid Unnecessary Re-Renders - use React.memo
+            useCallback and useMemo 
+            Code Splitting & Lazy Loading - Split your app into smaller chunks so the browser loads only what’s needed.
+            Virtualization for Long Lists
+            Throttling & Debouncing
+            Optimize assets: Images, fonts, lazy loading.
 
+20) What is Next.js?
+            Next.js is a React framework developed by Vercel that provides additional features for building production-ready
+            web applications. While React is a library for building UI components, Next.js is a full framework that adds 
+            structure, optimizations, and server-side capabilities on top of React.
 
-
+            Key features of Next.js:
+                  Server-Side Rendering (SSR) – Pages can be rendered on the server for better performance and SEO.
+                  Static Site Generation (SSG) – Pre-renders pages at build time.
+                  API Routes – Build backend endpoints within the same project.
+                  Routing – Built-in file-based routing system.
+                  Image Optimization – Automatically optimizes images for faster loading.
+                  Automatic Code Splitting – Only loads the necessary JS for a page, improving performance.
 
 
 
