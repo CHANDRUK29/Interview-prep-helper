@@ -184,8 +184,10 @@
 	reusability, and facilitate better maintainability and scalability of NodeJS applications.
 
 16) What is a service worker?
-	A Service worker is basically a script (JavaScript file) that runs in the background, separate from a web page 
-	and provides features that don't need a web page or user interaction. 
+	A Service Worker is a JavaScript file that acts as a programmable network proxy, running in the 
+	background of a web browser, separate from the main page thread, to intercept network requests, 
+	cache assets, and enable powerful features like offline functionality, push notifications, and 
+	background sync, making web apps feel more like native apps, especially for Progressive Web Apps (PWAs).  
 
 
 17) what is promise?
