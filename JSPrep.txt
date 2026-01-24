@@ -185,6 +185,13 @@
 		*)Bind returns a new function, and you can invoke/call it anytime you want by invoking a function.
 
 
+12) D) what is shallow copy and deep copy explain in detail?
+		Shallow copy creates a new object but inserts references to the original nested objects, 
+		making them dependent; changing a nested object in the copy affects the original. 
+		Deep copy recursively clones every object, creating a fully independent clone where changes do not
+		affect the original, suitable for complex structures.
+
+
 13) What are classes in ES6 ?
 	Classes are nothing but syntatic sugar for constructor functions.
 	Classes in JavaScript provide a structured way to create objects and handle inheritance, making your 
