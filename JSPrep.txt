@@ -156,14 +156,30 @@
 	classes are moved to the top of their scope before code execution.
 
 
-12) A) what is Closures?
+12) A) What is Lexical Scope ?
+		Lexical scope in JavaScript is a scoping mechanism where the accessibility of variables
+		is determined by their physical location within the source code at the time of 
+		definition (author-time), rather than where they are executed (run-time).
+
+	A1) What is the Execution Context?
+		When the JavaScript engine scans a script file, it makes an environment called the Execution 
+		Context that handles the entire transformation and execution of the code.
+		During the context runtime, the parser parses the source code and allocates memory for the variables and functions. 
+
+		There are two phases of JavaScript execution context:	
+			Creation phase: In this phase, the JavaScript engine creates the execution context and sets up the 
+			script's environment.
+			Execution phase: In this phase, the JavaScript engine executes the code in the execution context.
+
+	
+12)	B) what is Closures?
 	A closure is the combination of a function bundled(enclosed) together with its 
 	lexical environment within which that function was declared.
 
 	Ability Of a function to remember the variables and functions that are declared in its outer scope.
 
 
-12) B) CALL VS APPLY VS BIND
+12) C) CALL VS APPLY VS BIND
 		*)Call invokes the function immediately and allows you to pass in arguments one by one.
 		*)Apply invokes the function immediately and allows you to pass in arguments as an array.
 		*)Bind returns a new function, and you can invoke/call it anytime you want by invoking a function.
