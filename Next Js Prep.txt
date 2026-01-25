@@ -49,6 +49,45 @@ Link : https://github.com/mrhrifat/nextjs-interview-questions
         *)Implement Content Security Policy (CSP) headers.
         *)Use secure cookies with HttpOnly and Secure flags.
 
+6) what is Server Side Rendering (SSR)?
+        Server-Side Rendering (SSR) in Next.js is a technique where pages are pre-rendered
+        into complete HTML on the server for each request and sent it to browser for displaying.
+
+
+7) What is Static Site Generation in NextJs?
+        Static Site Generation (SSG) in Next.js is a rendering method where web pages are 
+        pre-rendered into static HTML files at build time, rather than on each user request
+
+
+8) what is Incremental Static Regeneration?
+        Incremental Static Regeneration (ISR) is a Next.js rendering strategy that enables you
+        to update static pages after the site has been built and deployed, without needing a 
+        full rebuild of the entire application
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
