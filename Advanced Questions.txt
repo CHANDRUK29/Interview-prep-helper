@@ -102,10 +102,9 @@
 
 
 13) What is the use of useTransition hook in React?
-            The useTransition hook is included in React 18 to tackle this situation. 
-            With this hook, you can specify any state updates as non-urgent. '      
-            These non-urgent state updates will occur simultaneously with other urgent state updates, 
-            but the component rendering will not wait for the non-urgent state updates.
+            The useTransition hook in React allows you to mark certain state updates as non-urgent,
+            enabling the UI to remain responsive to critical user interactions (like typing or clicking)
+            during heavy rendering or data processing operations. 
 
 
 14) Atomic Design in React:
