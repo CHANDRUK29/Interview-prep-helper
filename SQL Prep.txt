@@ -538,7 +538,12 @@ SQL Queries:
     FROM employees
     GROUP BY dept_id;
 
+4) How do you find customers who have not placed any orders?
 
+    SELECT c.customer_id, c.name
+    FROM customers c
+    LEFT JOIN orders o ON c.customer_id = o.customer_id
+    WHERE o.customer_id IS NULL;
 
 
 
