@@ -519,8 +519,15 @@
 
 
 
+SQL Queries:
 
+1) Write a query to find the second highest salary from a table.
+    SELECT DISTINCT salary
+    FROM employees
+    ORDER BY salary DESC
+    LIMIT 1 OFFSET 1;
 
+2)
 
 
 
