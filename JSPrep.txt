@@ -49,7 +49,28 @@
 			Function Scope: Variables declared with var inside a function.
 			Block Scope: Variables declared with let or const inside a block (e.g., if, for).
 
-	
+
+3) C)what is event propagation?
+		Event propagation is the overall process of how an event travels through the DOM.
+
+	Diff b/w event bubbling and capturing
+		Event capturing is when the event moves from the root down to the target.
+		Event bubbling is when the event moves from the target back up to the root.
+
+	what is event delegation?
+		Event delegation is attaching a single event listener to a parent element and handling child events using event bubbling
+
+3) D) ASYNC vs DEFER?
+		Both async and defer allow the HTML parsing process to continue without waiting for the script to be downloaded.
+		The difference lies in when the script is executed:
+		With async, the script executes as soon as it's downloaded, potentially before the HTML document is fully parsed. 
+		With defer, the script executes only after the HTML document is fully parsed, but before the DOMContentLoaded event.
+
+3) E) What is Hydration in javascript?
+		It the process of taking a static HTML web page, which has been pre-rendered on the server 
+		(Server-Side Rendering - SSR) or at build time (Static Site Generation - SSG), and converting it 
+		into a dynamic, interactive application by attaching JavaScript event listeners to the DOM elements.
+
 
 4) What is Callback Hell?
 	Callback Hell, also known as "Pyramid of Doom", refers to a situation where multiple nested 
@@ -135,17 +156,40 @@
 	classes are moved to the top of their scope before code execution.
 
 
-12) A) what is Closures?
+12) A) What is Lexical Scope ?
+		Lexical scope in JavaScript is a scoping mechanism where the accessibility of variables
+		is determined by their physical location within the source code at the time of 
+		definition (author-time), rather than where they are executed (run-time).
+
+	A1) What is the Execution Context?
+		When the JavaScript engine scans a script file, it makes an environment called the Execution 
+		Context that handles the entire transformation and execution of the code.
+		During the context runtime, the parser parses the source code and allocates memory for the variables and functions. 
+
+		There are two phases of JavaScript execution context:	
+			Creation phase: In this phase, the JavaScript engine creates the execution context and sets up the 
+			script's environment.
+			Execution phase: In this phase, the JavaScript engine executes the code in the execution context.
+
+	
+12)	B) what is Closures?
 	A closure is the combination of a function bundled(enclosed) together with its 
 	lexical environment within which that function was declared.
 
 	Ability Of a function to remember the variables and functions that are declared in its outer scope.
 
 
-12) B) CALL VS APPLY VS BIND
+12) C) CALL VS APPLY VS BIND
 		*)Call invokes the function immediately and allows you to pass in arguments one by one.
 		*)Apply invokes the function immediately and allows you to pass in arguments as an array.
 		*)Bind returns a new function, and you can invoke/call it anytime you want by invoking a function.
+
+
+12) D) what is shallow copy and deep copy explain in detail?
+		Shallow copy creates a new object but inserts references to the original nested objects, 
+		making them dependent; changing a nested object in the copy affects the original. 
+		Deep copy recursively clones every object, creating a fully independent clone where changes do not
+		affect the original, suitable for complex structures.
 
 
 13) What are classes in ES6 ?
@@ -163,8 +207,10 @@
 	reusability, and facilitate better maintainability and scalability of NodeJS applications.
 
 16) What is a service worker?
-	A Service worker is basically a script (JavaScript file) that runs in the background, separate from a web page 
-	and provides features that don't need a web page or user interaction. 
+	A Service Worker is a JavaScript file that acts as a programmable network proxy, running in the 
+	background of a web browser, separate from the main page thread, to intercept network requests, 
+	cache assets, and enable powerful features like offline functionality, push notifications, and 
+	background sync, making web apps feel more like native apps, especially for Progressive Web Apps (PWAs).  
 
 
 17) what is promise?

@@ -1,3 +1,5 @@
+Link : https://github.com/mrhrifat/nextjs-interview-questions
+
 1. What is Next.js?
     Next.js is an open-source web development React-based framework created by Vercel, which is famous for its
     unique features such as Server-side rendering and enhanced SEO. It has some additional features such as
@@ -19,14 +21,94 @@
     
 
 3) Mention some features of Next.js.
-    *)Server-Side Rendering (SSR): Next.js allows server-side rendering, improving initial page load performance by rendering HTML on the server 
-        and sending it to the client.
-    *)Static Site Generation (SSG): Next.js supports static site generation, enabling the pre-rendering of pages at build time, resulting in faster 
-        loading times and  better SEO.
-    *)File System-Based Routing: The routing system is based on the file structure of the "pages" directory, making it intuitive and easy to organize code.
+    *)Server-Side Rendering (SSR): Next.js allows server-side rendering, improving initial page load performance by rendering HTML 
+        on the server and sending it to the client.
+    *)Static Site Generation (SSG): Next.js supports static site generation, enabling the pre-rendering of pages at build time, 
+        resulting in faster loading times and  better SEO.
+    *)File System-Based Routing: The routing system is based on the file structure of the "pages" directory, making it intuitive 
+        and easy to organize code.
     *)Automatic Code Splitting: Next.js automatically splits code into smaller chunks, loading only what's necessary for each page. 
         This enhances performance by reducing initial bundle sizes.
-    *)API Routes: Easily create serverless functions by defining API routes alongside your pages, simplifying the development of server-side logic.
+    *)API Routes: Easily create serverless functions by defining API routes alongside your pages, simplifying the development 
+        of server-side logic.
+
+
+4) List some common performance optimization techniques in Next.js.
+        *)Use static generation (SSG) for pages that can be pre-rendered.
+        *)Implement incremental static regeneration (ISR) for dynamic content.
+        *)Use the next/image component for optimized images.
+        *)Enable code splitting and tree shaking.
+        *)Use dynamic imports for large components.
+        *)Optimize CSS with CSS modules or styled-components.
+        *)Leverage caching strategies for API routes.
+
+
+5) Mention some common security practices in Next.js.
+        *)Use HTTPS for secure communication.
+        *)Implement authentication and authorization.
+        *)Sanitize user input to prevent XSS attacks.
+        *)Use environment variables for sensitive data.
+        *)Regularly update dependencies to patch vulnerabilities.
+        *)Implement Content Security Policy (CSP) headers.
+        *)Use secure cookies with HttpOnly and Secure flags.
+
+
+6) what is Server Side Rendering (SSR)?
+        Server-Side Rendering (SSR) in Next.js is a technique where pages are pre-rendered
+        into complete HTML on the server for each request and sent it to browser for displaying.
+
+
+7) What is Static Site Generation in NextJs?
+        Static Site Generation (SSG) in Next.js is a rendering method where web pages are 
+        pre-rendered into static HTML files at build time, rather than on each user request
+
+
+8) what is Incremental Static Regeneration?
+        Incremental Static Regeneration (ISR) is a Next.js rendering strategy that enables you
+        to update static pages after the site has been built and deployed, without needing a 
+        full rebuild of the entire application
+
+
+9) Explain the concept of dynamic routing in Next.js:
+        Dynamic routing in Next.js allows developers to create routes with dynamic parameters, 
+        enabling pages to handle different data or content based on these parameters.
+
+
+10)  What is meant by Styled JSX in Next.js?
+        Styled JSX is a CSS-in-JS library that allows you to write encapsulated and scoped CSS to style
+        your components.
+
+
+11) How do you pass data between pages in a Next.js application?
+        There are multiple ways to pass data between pages:
+            URL Query Parameters: Send data through the URL and access it via the useRouter hook.
+            Router API: Use Next.js routing to programmatically navigate and pass state.
+            State Management Libraries: Use tools like Redux or React Context to share data across pages.
+            Server-Side Data Fetching: Use getServerSideProps to fetch data on the server and pass it as props
+                to the page component.
+
+
+12) What is Hot Module Replacement (HMR) in Next.js, and how does it improve the development experience?
+        Hot Module Replacement (HMR) is a feature in Next.js that updates modules in a running application
+        without requiring a full page reload
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

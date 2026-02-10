@@ -1,0 +1,7 @@
+1. What is Ruby on Rails?
+
+  Rails is a full-stack MVC framework used to build web applications quickly using Ruby.
+  It focuses on:
+  *)Convention over configuration
+  *)DRY (Don’t repeat yourself)
+  *)Rapid development

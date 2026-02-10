@@ -105,10 +105,19 @@ What is Sequelize?
         It's an open-source tool that can help reduce development time and prevent SQL injections
 
 
-
 what is React Js?
     React.js is a popular JavaScript library used for building user interfaces, particularly for 
     single-page applications where a responsive, dynamic user experience is essential
+
+
+what is Docker?
+	Docker is a platform that uses containers to make application development, deployment,
+	and scaling easier, faster, and more consistent.
+
+
+what is container?
+	A container in Docker is a lightweight, standalone, and isolated environment used to run an application
+	along with everything it needs—code, libraries, dependencies, and configuration.
 
 
 1. What is AWS?

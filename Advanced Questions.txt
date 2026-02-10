@@ -1,0 +1,225 @@
+1) What are Micro FrontEnd?
+      Micro frontends (MFEs) is a web development architecture where a large frontend application is broken down into smaller,
+      independent, and deployable modules, each responsible for a specific business feature, allowing different teams to build,
+      test, and deploy them autonomously, often using different technologies, mirroring the microservices approach for the backend
+      PROS:
+            Teams release features without waiting on others
+            Different frameworks or versions can coexist
+            Teams can work in parallel with fewer conflicts
+      CONS:
+            Multiple JS bundles
+            Duplicate dependencies (React, lodash)
+            Slower initial load if not optimized
+            State management is hard
+            Multiple repos & Multiple CI/CD pipelines
+
+
+2) What Is Webpack Module Federation?
+      Webpack Module Federation (introduced in Webpack 5) allows multiple independent JavaScript applications to share code at runtime.
+      With Module Federation (the new world):
+            *)Apps are independent
+            *)They talk to each other at runtime
+            *)Shared dependencies (like React) are not duplicated
+            *)Each app can be deployed on its own
+      Core Concepts of Webpack module Federation:
+            *)Host: The application currently running in the browser that consumes modules from another application.
+            *)Remote: A separate application that exposes modules (components, functions, etc.) for the Host to consume.
+            *)Exposed Module: A specific file or component made available by a Remote to be used by other applications.
+            *)Shared Module: A dependency (like React or Vue) that is shared across applications to avoid code duplication.
+            *)Runtime: Code is loaded while the application is running in the user's browser, not during the build process. 
+
+      Pros of Module Federation:
+            Independent deployments - Update one app without rebuilding others
+            Runtime code sharing - No npm publishing required
+            Smaller bundles - Shared libraries loaded once
+
+      Cons of Module Federation:
+            Runtime failures - Remote down = feature broken
+            Version conflicts - Bad shared config = subtle bugs
+
+2) B) When Microfrontend Apps Crash ?
+            *)The remote becomes down,slow, deployed incorrectly or blocked by CDN/Network
+                  Solution:
+                        Error boundaries
+                        Fallback UI
+                        Health checks
+            *) Version mismatch in shared dependencies
+            *) Bad Module Federation configuration - Wrong exposed path,Remote name mismatch,Incorrect URL
+            *) Sharing state or globals incorrectly
+            *) CSS & DOM collisions - Global CSS leaks,Reset styles override other apps.
+
+
+3) What is Redux Toolkit Query(RTK)?
+            RTK Query is a powerful data fetching and caching tool. It is designed to simplify 
+            common cases for loading data in a web application, eliminating the need to 
+            hand-write data fetching & caching logic yourself.
+
+
+4) What is concurrent Rendering?
+            Concurrent rendering in React is a foundational update introduced in React 18 that allows React to interrupt a 
+            long-running rendering task to handle high-priority tasks, such as user input, without blocking the main thread
+
+
+5) What is reconciliation in React?
+            Reconciliation is React’s process of comparing the previous Virtual DOM tree with the new Virtual DOM tree 
+            to determine the minimal set of changes required to update the real DOM.
+
+
+6) Explain React Fiber architecture?
+            React Fiber is a complete re-implementation of React's core reconciliation algorithm, introduced in React 16 
+            to improve performance, particularly for animation, layout, and user interactions 
+
+
+7) What is lifting state up?
+            Moving shared state to the closest common parent so multiple components can access and modify it.
+            
+
+8) Difference between useEffect and useLayoutEffect?
+            The fundamental difference between useEffect and useLayoutEffect is timing: 
+            useEffect runs asynchronously after the browser has painted the screen, 
+            while useLayoutEffect runs synchronously before the browser paints. 
+
+
+9) What is purpose of hydration?
+            Hydration is simply the process of attaching JavaScript behavior to HTML elements that have been generated 
+      on the server.
+
+
+10) Synthetic Events in ReactJS
+            Synthetic events in React are cross-browser wrappers around the browser's original event.
+            It is designed to provide a consistent, cross-browser interface for handling events in React applications.
+
+
+11) App UI freezes during heavy computation in reactjs?
+            UI freezes in React are typically caused by heavy, synchronous computations blocking the browser's main thread.
+            To prevent this, you should offload the heavy work to a separate thread using a Web Worker or use React's 
+            built-in performance optimization techniques like useTransition and memoization. 
+
+
+12) What is Optmistic UI Updates?
+            Optimistic UI updates are a design pattern where the user interface (UI) is updated immediately after
+            a user action, assuming the server operation will succeed, rather than waiting for the server's response.
+
+
+13) What is the use of useTransition hook in React?
+            The useTransition hook in React allows you to mark certain state updates as non-urgent,
+            enabling the UI to remain responsive to critical user interactions (like typing or clicking)
+            during heavy rendering or data processing operations. 
+
+
+14) Atomic Design in React:
+            Atomic design is a methodology for creating design systems by breaking down user interfaces
+            into their fundamental building blocks. This pattern provides a structured,
+            hierarchical way to organize components, enhancing reusability, maintainability, and scalability.
+            1. Atoms:
+                  Atoms are the smallest, indivisible building blocks of a UI, often corresponding to single HTML elements or simple React components
+                  Examples: Buttons, input fields, labels, icons, color palettes, and fonts.
+            2. Molecules:
+                  Molecules are simple combinations of atoms that function as a unit. 
+                  Examples: A search bar (input and button) or a form field (label and input)
+            3. Organisms:
+                  Organisms are more complex components made up of molecules and atoms. 
+                  Examples: A navigation bar (logo, search bar, links) or a login form.
+            4. Templates:
+                  Templates define the layout and structure of pages using organisms. 
+                  They represent the content structure without the final content.
+                  Examples: HomePageTemplate
+            5. Pages:
+                  Pages are specific instances of templates where real content is added. 
+                  This final stage allows for testing the design system with actual data.
+                  Examples: HomePage
+
+Atmoic Design Structure Example:
+src/
+|-- components/
+|   |-- atoms/
+|   |   |-- Button.js
+|   |   ...
+|   |-- molecules/
+|   |   |-- SearchBar.js
+|   |   ...
+|   |-- organisms/
+|   |   |-- Header.js
+|   |   ...
+|   |-- templates/
+|   |   |-- HomepageTemplate.js
+|   |   ...
+|-- pages/
+|   |-- HomePage.js
+|   ...
+
+            PROS:
+                  Prevents duplication when many features share UI patterns
+                  Atoms and molecules are easy to unit test
+                  Encourages reuse of the same base components everywhere
+                  Forces you to think in terms of “building blocks”
+            CONS:
+                  Small or medium projects may not need this much structure
+                  Atomic Design organizes by UI type, not business capability
+
+
+15) React 19 Issue?
+            The most significant recent issues in React 19 are a set of critical security vulnerabilities (CVEs)
+            in React Server Components and various migration difficulties/breaking changes related to API removals
+            and peer dependency mismatches
+      A)What Exactly Happened ?
+            React 19 introduced a new system for React Server Components (RSC). 
+            This system sends special data streams from the server to the browser. 
+            This data describes how to build the UI.
+            Hackers discovered that: They could inject malicious commands into this stream. 
+
+
+
+16) Virutal Scrolling / Windowing / List Virutalization?
+            Virtual scrolling (also called windowing) is a technique to efficiently render very long lists or grids in a UI.
+            The key idea is:
+            Only render the items that are visible on the screen, plus a few extra (“overscan”), instead of rendering the entire list.
+
+
+17) What is server side rendering (SSR)?
+            Server-Side Rendering (SSR) is a technique where a web page's content is generated as fully-formed HTML on the server first,
+            then sent to the user's browser, resulting in faster initial loads, better SEO, and improved accessibility 
+            compared to Client-Side Rendering (CSR)
+
+
+18) What is React Server Components?
+            React Server Components (RSCs) are a new architecture in React that allows developers to run components and fetch data
+            exclusively on the server, resulting in improved performance and smaller client-side JavaScript bundles.
+
+
+19) performance optimization techniques in react?
+            Avoid Unnecessary Re-Renders - use React.memo
+            useCallback and useMemo 
+            Code Splitting & Lazy Loading - Split your app into smaller chunks so the browser loads only what’s needed.
+            Virtualization for Long Lists
+            Throttling & Debouncing
+            Optimize assets: Images, fonts, lazy loading.
+
+20) What is Next.js?
+            Next.js is a React framework developed by Vercel that provides additional features for building production-ready
+            web applications. While React is a library for building UI components, Next.js is a full framework that adds 
+            structure, optimizations, and server-side capabilities on top of React.
+
+            Key features of Next.js:
+                  Server-Side Rendering (SSR) – Pages can be rendered on the server for better performance and SEO.
+                  Static Site Generation (SSG) – Pre-renders pages at build time.
+                  API Routes – Build backend endpoints within the same project.
+                  Routing – Built-in file-based routing system.
+                  Image Optimization – Automatically optimizes images for faster loading.
+                  Automatic Code Splitting – Only loads the necessary JS for a page, improving performance.
+
+
+
+
+
+
+
+
+
+
+=============================================================================================================
+
+
+
+
+
