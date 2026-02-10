@@ -527,7 +527,18 @@ SQL Queries:
     ORDER BY salary DESC
     LIMIT 1 OFFSET 1;
 
-2)
+2) Write a query to find duplicate records in a table.
+    SELECT email, COUNT(*) AS count_dup
+    FROM employees
+    GROUP BY email
+    HAVING COUNT(*) > 1;
+
+3) Find the count of employees in each department.
+    SELECT dept_id, COUNT(*) AS employee_count
+    FROM employees
+    GROUP BY dept_id;
+
+
 
 
 
