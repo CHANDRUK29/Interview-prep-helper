@@ -517,6 +517,9 @@
     advanced formatting needs, particularly with date and time.
 
 
+54) Optimistic vs pessimistic locking:
+    Optimistic locking : where a record is locked only when changes are committed to the database.
+    Pessimistic locking : where a record is locked while it is edited.
 
 
 SQL Queries:
