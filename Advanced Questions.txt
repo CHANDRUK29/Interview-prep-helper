@@ -209,6 +209,29 @@ src/
                   Automatic Code Splitting – Only loads the necessary JS for a page, improving performance.
 
 
+21) What is a Message Queue?
+      A message queue is a middleware that allows services to communicate asynchronously by sending and
+       receiving messages via a queue.
+            *)Producer → pushes message to queue
+            *)Queue / Broker → stores message temporarily
+            *)Consumer → pulls message from queue
+
+
+22) what is RabbitMQ? 
+      RabbitMQ is an open-source, message-broker software that acts as middleware to facilitate asynchronous
+      communication between distributed applications, microservices, or components. It uses the Advanced 
+      Message Queuing Protocol (AMQP) to receive messages from producers, queue them, and deliver them to 
+      consumers, reducing server load and improving reliability. 
+
+
+23) what is Apache Kafka?
+      Apache Kafka is an open-source, distributed event streaming platform used to collect, process, store,
+      and analyze real-time data streams at high speed and scale. It acts as a highly scalable message broker,
+      allowing applications to publish and subscribe to data feeds (topics) across multiple, fault-tolerant servers. 
+
+
+
+
 
 
 
