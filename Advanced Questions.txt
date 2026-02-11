@@ -230,6 +230,67 @@ src/
       allowing applications to publish and subscribe to data feeds (topics) across multiple, fault-tolerant servers. 
 
 
+24) sharding vs Partitioning?
+      Sharding: Data is distributed across multiple servers/databases (horizontal scaling).
+      Partitioning: Data is divided into parts within the same database/server (better management & faster queries).
+
+
+25) GRPC?
+      gRPC (gRPC Remote Procedure Calls) is an open-source, high-performance Remote Procedure Call (RPC) framework 
+      that enables client and server applications to communicate with each other 
+
+
+26) How does the browser rendering pipeline work?
+      (HTML → CSS → Layout → Paint → Composite)
+      Example:
+            HTML builds skeleton
+            CSS dresses it
+            Layout measures body
+            Paint adds color
+            Composite assembles layers
+            GPU shows final image
+
+
+27) What causes memory leaks in frontend applications?
+
+      Golden Rules to Prevent Leaks
+            Remove event listeners
+            Clear timers
+            Close sockets
+            Avoid unnecessary globals
+            Limit cache sizes
+            Disconnect observers
+            Always clean up in component unmount
+            Use WeakMap when appropriate
+
+
+28) Component re-renders even when props don’t change What are the hidden reasons?
+
+      Props are new object/array/function references (shallow comparison fails)
+      Parent re-renders
+      Context values change
+      Inline computations or inline styles in props
+      Unstable keys
+      Local state/effect updates
+      StrictMode double rendering (dev only)
+
+
+29) What is code splitting and how does React.lazy work internally?
+      Code splitting is breaking a large JS bundle into smaller chunks that can be loaded on demand.
+      React.lazy uses dynamic import, returning a Promise for a component. React suspends rendering 
+      until the Promise resolves and shows a Suspense fallback
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
