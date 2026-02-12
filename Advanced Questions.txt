@@ -310,6 +310,16 @@ src/
 
 
 
+34) what is web vitals?
+      Web Vitals are a set of metrics from Google that quantify the real-world user experience of a website, 
+      focusing on loading speed, interactivity, and visual stability
+      Largest Contentful Paint (LCP): Measures loading performance.
+      Interaction to Next Paint (INP): Measures responsiveness.
+      Cumulative Layout Shift (CLS): Measures visual stability.
+
+
+
+
 
 
 
