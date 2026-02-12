@@ -15,3 +15,9 @@
 
 2) What is JSX?
     JSX stands for JavaScript XML and it is an XML-like syntax extension to ECMAScript. 
+
+
+3) What are Ref's in react?
+    In React, refs (short for references) are a mechanism to access DOM nodes or React 
+    elements directly and store mutable values that do not cause a component to re-render
+    when updated.
