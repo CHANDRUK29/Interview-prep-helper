@@ -281,9 +281,21 @@ src/
       until the Promise resolves and shows a Suspense fallback
 
 
+30) What are the different ways to pass data from child component to parent component in react ?
+      Callback props — parent passes a function, child calls it.
+      State lifting — parent owns state, children update via callbacks.
+      Context API — avoid prop drilling in deeply nested trees.
+      Refs / useImperativeHandle — parent calls child methods.
+      Global state libraries — Redux, Zustand, Recoil.
+      Custom events — rare, for integration with non-React code.
 
 
-
+31) How do you optimize your react application ?
+      Prevent Unnecessary Re-renders - React.Memo,useMemo,useCallback and Split Contex;
+      Optimize List Rendering - use Virtualization and keys props efficiently
+      Code Splitting & Lazy Loading - React.Lazy + Suspense
+      Optimize Images & Assets - images,fonts,Svg's
+      optimize bundles with tree-shaking,compression and remove unused code.
 
 
 
