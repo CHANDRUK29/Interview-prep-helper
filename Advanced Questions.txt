@@ -298,11 +298,15 @@ src/
       optimize bundles with tree-shaking,compression and remove unused code.
 
 
-
-
-
-
-
+33) different design patterns used in react?
+      Container (Smart): Handles state, API calls, logic.
+      Presentational (Dumb): Receives props, renders UI only.
+      Higher-Order Components (HOC) - A function that takes a component and returns a new enhanced component.
+      Render Props - A component receives a function as a prop to render something dynamically.
+      Compound Components - Components work together with shared state, often using Context internally.
+      Context Pattern - Share global state across deeply nested components without prop drilling.
+      Module Pattern (Organizing Files) - Group component + styles + hooks + tests in one folder.
+      Lazy Loading / Code Splitting Pattern - Dynamically import components using React.lazy and Suspense
 
 
 
