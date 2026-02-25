@@ -451,6 +451,8 @@
 	the behavior of the application.
 
 60) Streams VS Buffer ?
+	A Buffer is a temporary memory area that holds raw binary data. It allocates memory,
+	Stores the entire data at once, You can read/write it randomly
 	Buffers are used when you need to store and process the entire data at once, typically for 
 	small to moderate-sized data.
 
