@@ -318,6 +318,10 @@ src/
       Cumulative Layout Shift (CLS): Measures visual stability.
 
 
+35) What is Stale Clousure in React?
+      A stale closure in React occurs when a function remembers outdated state or props from a previous render 
+      due to JavaScript closure behavior. It commonly appears in effects, timers, and async callbacks. 
+      The fix is to include proper dependencies, use functional state updates, or store mutable values in refs.
 
 
 
