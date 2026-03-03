@@ -324,6 +324,32 @@ src/
       The fix is to include proper dependencies, use functional state updates, or store mutable values in refs.
 
 
+36)  Batching in React – how it works (especially in React 18)?
+            Batching in React means grouping multiple state updates into a single render to improve performance.
+                  Before React 18 -(Legacy Behaviour)
+                        bacthing works only in react event handlers, lifecycle methods.
+                  After React 18 - (Automatic Batching Everywhere)
+                        Event Handlers, setTimeout, Promises, Async/Await, fetch Callbacks
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
