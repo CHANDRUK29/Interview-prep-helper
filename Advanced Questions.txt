@@ -332,13 +332,19 @@ src/
                         Event Handlers, setTimeout, Promises, Async/Await, fetch Callbacks
 
 
+37) Flushing in React – what is flushSync?
+            flushSync is an API from react-dom that forces React to immediately flush state updates and 
+            synchronously update the DOM. Normally, React batches updates and applies them later
+            (especially in React 18 with automatic batching). flushSync breaks that behavior.
 
 
 
-
-
-
-
+38) Component re-renders even when props don’t change? What are the hidden reasons?
+            Even if the content is the same, new objects/arrays/functions trigger re-renders because React uses shallow comparison.
+            Context Updates Trigger Re-renders - Any component consuming React context will re-render when the context value changes.
+            Parent Re-renders Trigger Child Re-renders
+            Non-stable Keys in Lists
+            Strict Mode / Development Behavior
 
 
 
