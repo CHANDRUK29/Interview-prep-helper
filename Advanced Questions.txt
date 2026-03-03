@@ -347,7 +347,15 @@ src/
             Strict Mode / Development Behavior
 
 
+39) How does React.memo differ from useMemo?
 
+| Feature          | `React.memo`                       | `useMemo`                           |
+| ---------------- | ---------------------------------- | ----------------------------------- |
+| What it memoizes | **Component**                      | **Value / Computation**             |
+| Level            | Component level                    | Inside render function              |
+| Purpose          | Prevent unnecessary **re-renders** | Avoid **expensive recalculation**   |
+| Usage            | Wrap a component                   | Wrap a function call or computation |
+| Dependencies     | Props (shallow compare by default) | Dependency array                    |
 
 
 
