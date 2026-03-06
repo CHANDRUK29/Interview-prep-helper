@@ -294,6 +294,22 @@
         to another to balance data distribution. During this process, MongoDB may create temporary 
         files/directories (often referred to as moveChunk directories) to safely transfer data between shards.
 
+            ❌ No, you should not manually move or modify them.
+                    📌 How moveChunk Works (Simplified)
+                            Balancer selects a chunk.
+                            Chunk data is copied to another shard.
+                            Source shard continues accepting writes.
+                            Changes are synchronized.
+                            Metadata is updated.
+                            Old chunk is removed.
+
+
+
+
+
+
+
+
 
 
 ====================================================================================================================
