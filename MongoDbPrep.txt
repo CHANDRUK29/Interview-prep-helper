@@ -289,8 +289,10 @@
     Durability : The changes of a successfull transaction occurs even if the system failure occurs.
 
 
-
-
+34) What is moveChunk directory and Explain can you move old files in the moveChunk directory?
+        In MongoDB sharded clusters, the moveChunk operation is used to move a chunk of data from one shard
+        to another to balance data distribution. During this process, MongoDB may create temporary 
+        files/directories (often referred to as moveChunk directories) to safely transfer data between shards.
 
 
 
