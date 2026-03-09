@@ -77,6 +77,17 @@
 		*)Dealing with relational databases is not a good option for Node.js.
 		*)Since Node.js is single-threaded, CPU intensive tasks are not its strong suit.
 
+10 B) Performance Optimization in Node js? 
+		
+		Performance optimization in Node.js can be achieved by using 
+			asynchronous programming, 
+			avoiding blocking the event loop, 
+			implementing caching, 
+			using clustering for multiple CPU cores, 
+			optimizing database queries, 
+			using load balancing, and monitoring performance.
+
+
 
 11) Differentiate between process.nextTick() and setImmediate()?
 	process.nextTick() runs code immediately after the current operation, before I/O tasks. 
