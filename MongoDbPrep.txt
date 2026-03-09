@@ -184,6 +184,12 @@
     Secondary nodes are known as slave nodes. These are read only nodes that replicate from the primary.
 
 
+23) B) How would you troubleshoot a MongoDB deployment with high memory usage?
+            I start by checking metrics via mongostat or monitoring tools like Atlas or Ops Manager. 
+            I examine slow queries using db.currentOp() and analyze indexes. Unindexed queries, large 
+            working sets, or large documents often cause memory spikes.
+
+
 24) MongoDb Query Operators?
     There are many query operators that can be used to compare and reference document fields.
         Comparison :
