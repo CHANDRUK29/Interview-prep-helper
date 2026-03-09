@@ -64,7 +64,6 @@
 
 
 10) What are the pros and cons of Node.js?
-
 	PROS:
 		*)Fast processing and an event-based model.
 		*)Uses JavaScript, which is well-known amongst developers.
@@ -77,8 +76,8 @@
 		*)Dealing with relational databases is not a good option for Node.js.
 		*)Since Node.js is single-threaded, CPU intensive tasks are not its strong suit.
 
+
 10 B) Performance Optimization in Node js? 
-		
 		Performance optimization in Node.js can be achieved by using 
 			asynchronous programming, 
 			avoiding blocking the event loop, 
@@ -87,6 +86,15 @@
 			optimizing database queries, 
 			using load balancing, and monitoring performance.
 
+
+10) C) Common Node.js performance issues include:
+			Blocking the event loop
+			Slow database queries
+			Too many database requests
+			Memory leaks
+			Large responses
+			Inefficient middleware
+			They can be fixed using async programming, caching, clustering, load balancing, compression, and monitoring tools.
 
 
 11) Differentiate between process.nextTick() and setImmediate()?
