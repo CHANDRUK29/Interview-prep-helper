@@ -389,10 +389,17 @@ src/
             OAuth 2.0: Also focuses on authorization, but when combined with OpenID Connect, it can handle authentication (login) securely.
 
 
+42) What is SSO?
+            Single Sign-On (SSO) is a mechanism that allows a user to log in once and gain access to multiple 
+            applications or services without having to log in separately to each one. It simplifies authentication
+            and improves user experience while centralizing access control.
 
 
-
-
+43) SSO VS OAUTH?
+            SSO = Log in once to access multiple applications (authentication).
+                  (EG) - Logging into Google, then automatically accessing Gmail, Drive, and YouTube
+            OAuth = Allow an app to access resources on another app without sharing credentials (authorization).
+                  (EG) - A third-party app accessing your Google Drive files without knowing your Google password
 
 
 
