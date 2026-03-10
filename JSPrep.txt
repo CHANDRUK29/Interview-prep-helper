@@ -130,6 +130,17 @@
 	Prototypal inheritance is the mechanism that allows objects to inherit properties and methods from other objects.
 
 
+	c) Object VS Map?
+			Object:
+				Objects in JavaScript are collections of key-value pairs.
+				Keys are always strings or symbols, and values can be of any data type.
+				Objects have a prototype chain, which means they inherit properties and methods from their prototype.
+			Map:
+				Maps, introduced in ECMAScript 6, are also collections of key-value pairs.
+				Keys can be of any data type, including objects or primitive values.
+				Maps do not have a prototype chain, providing a clean slate for storing key-value pairs.
+
+
 7) What is the currying function?
 	Currying is the process of taking a function with multiple arguments and 
 	turning it into a sequence of functions each with only a single argument. 
