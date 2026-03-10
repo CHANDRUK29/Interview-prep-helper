@@ -360,6 +360,42 @@ src/
 
 
 
+40) What is OAuth and how does it work?
+            OAuth (Open Authorization) is a standard protocol that allows one application to access 
+            resources on another application on behalf of a user, without exposing the user’s credentials.
+
+                  How OAuth Works (Authorization Code Flow)
+                        User Initiates Login:
+                              The client redirects the user to the Authorization Server (Google/Facebook login page).
+
+                        User Grants Permission:
+                              User logs in and consents to the app accessing specific resources (like email or profile).
+
+                        Authorization Code Issued:
+                              The Authorization Server sends a short-lived authorization code back to the client (via redirect URL).
+
+                        Client Exchanges Code for Token:
+                              The client server sends the code + client credentials to the Authorization Server.
+                              Server responds with an access token (and sometimes a refresh token).
+
+                        Client Accesses Resources:      
+                              The client uses the access token to make API requests to the Resource Server.
+                              Token proves authorization without sharing user password.
+
+
+
+41) OAuth 1.0 vs OAuth 2.0?
+            OAuth 1.0: Primarily designed for authorization only. It did not handle authentication by itself.
+            OAuth 2.0: Also focuses on authorization, but when combined with OpenID Connect, it can handle authentication (login) securely.
+
+
+
+
+
+
+
+
+
 
 
 
