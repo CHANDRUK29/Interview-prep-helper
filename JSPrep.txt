@@ -88,6 +88,17 @@
 		in the other. It can be done in two ways: One-Way Data Binding (Model → View) and Two-Way Data Binding (Model ↔ View).
 
 
+
+3) G) What is THIS Keyword does in JS?
+		THIS is a keyword in JavaScript that refers to the object that is currently executing the function.
+		Its value is determined by how the function is called, not where it is defined.
+
+
+3) H) What is Context?
+		In JavaScript, context refers to the value of THIS when a function executes. 
+		It represents the object that invokes the function and determines what this points to during execution
+
+
 4) What is Callback Hell?
 	Callback Hell, also known as "Pyramid of Doom", refers to a situation where multiple nested 
 	callbacks make the code more difficult to read and understand. This often occurs when dealing with 
