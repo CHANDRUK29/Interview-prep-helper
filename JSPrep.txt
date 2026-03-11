@@ -49,8 +49,12 @@
 			Function Scope: Variables declared with var inside a function.
 			Block Scope: Variables declared with let or const inside a block (e.g., if, for).
 
+3) C) What is Scope Chaining?
+			Scope chaining in JavaScript is the process by which the engine looks for a variable in the current scope
+			and, if not found, continues searching in outer scopes until it reaches the global scope.
 
-3) C)what is event propagation?
+
+3) D)what is event propagation?
 		Event propagation is the overall process of how an event travels through the DOM.
 
 	Diff b/w event bubbling and capturing
