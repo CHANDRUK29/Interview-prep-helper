@@ -403,6 +403,35 @@ src/
 
 
 
+44) What is Webhooks?
+            Webhooks are a way for one application to automatically send real-time data to another 
+            application when a specific event happens. Instead of repeatedly asking a server for 
+            updates (polling), webhooks let the server push the data instantly when the event occurs.
+
+                  Webhooks are widely used in:
+                        Payments (e.g., Stripe, PayPal)
+                        Git events (e.g., GitHub push events)
+                        CI/CD pipelines
+                        Messaging apps
+                        Order updates in e-commerce
+      
+
+45) what is Websockets?
+            WebSockets are a communication protocol that enableS real-time, bidirectional communication
+            between client and server over a persistent connection. Unlike normal HTTP requests, where 
+            the client sends a request and the server responds, WebSockets keep the connection open,
+            allowing both sides to send messages anytime.
+                  Websockets are widely used in:
+                        Chat applications
+                        Live notifications
+                        Multiplayer games            
+                        Stock market updates
+                        Collaborative apps (Google Docs style)
+
+
+
+
+
 
 
 
