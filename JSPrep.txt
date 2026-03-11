@@ -5,6 +5,11 @@
 	and many non-browser environments also use it.
 
 
+1) B) How does javascript engine works? 
+		A JavaScript engine parses code into an Abstract Syntax Tree, compiles it using JIT compilation, and 
+		executes it using a call stack and memory heap while managing memory with garbage collection.
+
+
 2) Difference between Node.js and JavaScript?
 	JavaScript and Node.js are both crucial in modern web development, but they serve different purposes 
 	and are used in different environments. 
