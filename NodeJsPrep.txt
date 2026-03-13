@@ -119,6 +119,43 @@
 	This file holds the metadata for a particular project. 
 	The package.json file is found in the root directory of any Node application or module.
 
+14) B) what is the difference between npm yarn and pnpm ?
+
+			NPM : Default package manager that comes with Node.js, Most widely used,Simple and stable
+				PROS: Installed automatically with Node,Huge ecosystem support,Works everywhere
+				CONS: Slower installs compared to yarn/pnpm (older versions especially)
+						Uses more disk space due to duplicated dependencies
+
+			YARN : Created by Meta (Facebook) to improve npm’s speed and reliability.
+				PROS : Faster installs (parallel downloads), Better lockfile (yarn.lock), Offline cache
+				CONS : Extra installation step , Slightly larger ecosystem complexity
+
+			PNPM(Performant npm) : A newer package manager focused on speed and disk efficiency.
+				PROS : Very fast installs,Saves disk space using a global content-addressable store,
+						Strict dependency structure (prevents hidden bugs), Excellent for monorepos
+				CONS : Some older packages may not work perfectly, Learning curve for some workflows
+	
+			Use npm if
+					You want simplicity
+					Small projects
+					Default Node setup
+
+			Use yarn if
+					Working with React / monorepos
+					Want stable dependency resolution
+
+			Use pnpm if
+					Large projects
+					Want best performance
+					Want least disk usage
+
+14) C) What is a Phantom Dependency?
+			A phantom dependency happens when your code uses a package that is NOT listed in your 
+			package.json, but it still works because another dependency installed it.
+			So your project silently depends on something you never declared.
+
+			FIX: pnpm uses a strict dependency structure. Your project cannot access the package unless you install it.
+
 
 15) What is REPL in Node.js?
 	REPL stands for Read Eval Print Loop, and it represents a computer environment.
