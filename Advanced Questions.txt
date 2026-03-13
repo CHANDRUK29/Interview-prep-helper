@@ -101,10 +101,16 @@
             a user action, assuming the server operation will succeed, rather than waiting for the server's response.
 
 
-13) What is the use of useTransition hook in React?
+13) A) What is the use of useTransition hook in React? - (Defer a state update)
             The useTransition hook in React allows you to mark certain state updates as non-urgent,
             enabling the UI to remain responsive to critical user interactions (like typing or clicking)
             during heavy rendering or data processing operations. 
+
+
+      b) What is the use of useDeferredValue? - (Defer a value update)
+                  useDeferredValue is a React hook used to improve performance by deferring the update of a value.
+                  It allows React to delay updating less important parts of the UI so that more important updates
+                  (like typing) stay responsive.
 
 
 14) Atomic Design in React:
