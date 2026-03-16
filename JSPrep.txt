@@ -581,6 +581,26 @@ myBankAccount.deposit(500);
 	This reduces coupling and promotes flexible, reusable code.
 
 
+38) Type URL (URL Parsing --> Your browser (like Google Chrome, Mozilla Firefox, or Microsoft Edge) first analyzes the URL)
+   		↓
+	DNS lookup -->(Finding the Server IP)
+  	 	↓
+	TCP connection -->Once the IP address is known, the browser opens a connection with the server using the Transmission Control Protocol (TCP).
+   		↓
+	TLS handshake --> Because the URL uses HTTPS, the browser creates a secure connection using Transport Layer Security (TLS).
+   		↓
+	HTTP request --> The browser sends an HTTP request:
+   		↓
+	Server processing --> The Server the reaches the appropriate data center and fetch the response
+   		↓
+	HTTP response
+   		↓
+	Browser rendering
+
+
+
+
+
 
 
 =============================================************************************===========================================
