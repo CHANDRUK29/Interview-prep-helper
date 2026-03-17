@@ -599,6 +599,17 @@ myBankAccount.deposit(500);
 
 
 
+39) JEST VS MOCHA?
+
+| Feature             | Jest 🟣             | Mocha 🟤          |
+| ------------------- | ------------------- | ----------------- |
+| Setup               | Zero config         | Needs setup       |
+| Built-in assertions | ✅ Yes               | ❌ No              |
+| Mocking             | ✅ Built-in          | ❌ External        |
+| Speed               | Fast (parallel)     | Slower by default |
+| Ecosystem           | Opinionated         | Flexible          |
+| Learning curve      | Easy                | Moderate          |
+| Best for            | React / modern apps | Custom setups     |
 
 
 
