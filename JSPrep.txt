@@ -613,6 +613,12 @@ myBankAccount.deposit(500);
 
 
 
+40) What is Intersection Observer?
+		The Intersection Observer API is a JavaScript tool used to asynchronously detect when a 
+		target element enters or leaves the browser viewport (or a parent container). Its primary 
+		uses include high-performance lazy loading of images, infinite scrolling, scroll-based animations.
+
+
 
 
 
