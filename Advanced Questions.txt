@@ -182,10 +182,16 @@ src/
             Only render the items that are visible on the screen, plus a few extra (“overscan”), instead of rendering the entire list.
 
 
-17) What is server side rendering (SSR)?
+17) A) What is server side rendering (SSR)?
             Server-Side Rendering (SSR) is a technique where a web page's content is generated as fully-formed HTML on the server first,
             then sent to the user's browser, resulting in faster initial loads, better SEO, and improved accessibility 
             compared to Client-Side Rendering (CSR)
+
+
+17) B) What is Static Site Generation (SSG)?
+            Static Site Generation (SSG) in Next.js is a pre-rendering method where web pages are generated as static HTML files at 
+            build time, rather than on each user request. These pre-built files are then served immediately to the user, 
+            resulting in faster performance, improved SEO, and reduced server load
 
 
 18) What is React Server Components?
