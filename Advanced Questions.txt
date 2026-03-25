@@ -250,6 +250,10 @@ src/
 25) GRPC?
       gRPC (gRPC Remote Procedure Calls) is an open-source, high-performance Remote Procedure Call (RPC) framework 
       that enables client and server applications to communicate with each other 
+      How it differs from Rest:
+            Uses Protocol Buffers (Protobuf), a binary serialization format. It is much smaller, faster, 
+            and more efficient to send and parse, often resulting in 7–10 times faster performance.
+            Uses HTTP/2 - Sending multiple requests over a single connection simultaneously.
 
 
 26) How does the browser rendering pipeline work?
