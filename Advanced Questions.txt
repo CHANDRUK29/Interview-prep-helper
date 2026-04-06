@@ -445,7 +445,11 @@ src/
                         Collaborative apps (Google Docs style)
 
 
-
+46) What is MQTT ?
+            MQTT (Message Queuing Telemetry Transport) is an extremely lightweight, open-standard publish/subscribe
+            messaging protocol designed for Internet of Things (IoT) devices with low bandwidth, high latency,
+            or unreliable networks. It operates on a TCP/IP model, connecting sensors and actuators to applications
+            through a central broker, allowing efficient communication
 
 
 
