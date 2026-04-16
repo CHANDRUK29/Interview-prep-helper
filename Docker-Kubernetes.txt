@@ -1,0 +1,186 @@
+-----------------------DOCKER COMMANDS-------------------------------------
+
+docker image ls                     # List images
+docker ps                           # List running containers
+docker ps -a                        # List all containers (including stopped)
+docker pull <image_name>            # Pull an image
+docker build -t image_name .        # Build image from Dockerfile
+docker rmi <image_name>             # Remove image
+docker rm <container_id|name>       # Remove container
+docker run <image_name>             # Run container
+docker run -p 80:80 <image_name>    # Run with port mapping
+docker run -p 5000:80 -d <image>    # Run detached in background
+docker logs <container_name>        # Show container logs
+docker stop <container_name>        # Stop container
+docker run --name my-container image-name   # Run with custom name
+docker container prune              # Remove all stopped containers
+docker run --rm image_name          # Auto-remove container after exit
+docker exec -it <container_id> sh   # Open shell inside container
+docker volume create my_volume      # Create named volume
+docker volume ls                    # List volumes
+docker volume inspect volume_name   # Inspect volume
+docker run -d -v my_volume:/app/data nginx   # Auto-create volume on run
+docker compose build                # Build/rebuild services from compose file
+docker compose up                   # Start services
+docker compose stop                 # Stop services
+docker compose down                 # Remove services
+docker push <tag_name>              # Push image to Docker Hub
+docker network ls                   # List networks
+docker network inspect <network_id> # Inspect network
+docker network create <name>        # Create new network
+
+
+
+--------------------DOCKER INTERVIEW QUESTIONS----------------------------
+
+1) What is Docker?
+	    Docker is an open-source platform that uses containerization technology to package applications
+	    and all their necessary parts—code, runtime, system tools, and libraries—into a single, 
+	    standardized unit called a container
+
+
+2) what is Docker Image?
+	    A Docker image is a read-only template that contains everything needed to run an application, 
+	    including the code, runtime, system tools, libraries, and settings. 
+	    It serves as a blueprint or snapshot used to create Docker containers.
+
+
+3) what is Docker Container?
+	    A container is the live, running instance of a Docker image.
+
+
+4) How does Docker differ from a Virtual Machine (VM)?
+	      Docker: Containers share the host’s OS kernel and isolate only the application environment, 
+	              making them lightweight and fast to start.
+	      VM: Requires a full guest operating system and a hypervisor, which consumes more resources and takes longer to boot.
+
+
+5) what is Docker Volumes?
+	    Docker Volumes are persistent storage mechanisms managed by Docker that allow containers to 
+	    retain data beyond their lifecycle
+
+
+6) Mount Types in Docker?
+	    Docker supports three primary types of mounts to store data outside a container's writable layer, 
+	    each serving different persistence and performance.
+	
+	    Volumes: Volumes are the preferred mechanism for persisting data generated and used by Docker containers. 
+	    Bind Mounts: Bind mounts link a file or directory on the host machine to a directory in the container.
+	    tmpfs Mounts: A tmpfs mount is stored only in the host's memory and never written to the host's disk.
+
+
+7) volumes vs Bind Mounts?
+	    The main difference between bind mounting and volume mounting is that we use bind mount to create 
+	    the persistent volume on the host machine and not in the docker host directory whereas volume 
+	    mounting does it on the docker host and hence you need to provide the entire directory name while mounting.
+
+
+8) What is the use of Layers in Docker?
+	    Layers let you extend images of others by reusing their base layers, 
+	    allowing you to add only the data that your application needs.
+
+
+9) what is docker network?
+	    Docker networking is a subsystem that allows containers to communicate with each other, the host machine, 
+	    and external networks like the internet.
+
+
+
+
+--------------------KUBERNETES COMMANDS------------------------------
+
+kubectl version --client                     # Client version
+kubectl version --client --output=yaml       # Client version in YAML
+kubectl apply -f pod.yml                     # Create pod
+kubectl get pods                             # List pods
+kubectl get pods --all-namespaces            # List pods across namespaces
+kubectl get pods --watch                     # Watch pod logs
+kubectl get pods -o wide                     # Detailed pod info
+kubectl get pod -A                           # List all pods
+kubectl get all                              # List all resources
+kubectl describe pod my-simple-nginx         # Pod details
+kubectl delete pod my-simple-nginx           # Delete pod
+kubectl get rs                               # List ReplicaSets
+kubectl describe rs <replicaset_name>        # ReplicaSet details
+kubectl scale rs <name> --replicas=10        # Scale ReplicaSet
+kubectl get nodes                            # List nodes
+kubectl describe nodes                       # Node details
+minikube start                               # Start Minikube
+minikube stop                                # Stop Minikube
+kubectl get services                         # List services
+kubectl delete deployment <name>             # Delete deployment
+kubectl get deployments                      # List deployments
+kubectl rollout history deployment <name>    # Deployment history
+kubectl get cm                               # List ConfigMaps
+kubectl describe cm <name>                   # ConfigMap details
+kubectl exec -it <pod_name> -- /bin/sh       # Enter pod shell
+kubectl get pv                               # List PersistentVolumes
+kubectl get pvc                              # List PersistentVolumeClaims
+kubectl delete pvc <name>                    # Delete PVC
+
+
+
+
+-----------------------KUBERNETES INTERVIEW QUESTIONS---------------------------------
+
+
+what is the use of service in Kubernetes?
+	The primary use of a Service in Kubernetes is to provide a stable, 
+	persistent network endpoint for a group of Pods.
+
+
+what is the use of end point in Kubernetes?
+	Endpoints in Kubernetes used to store the specific IP addresses and ports of pods, 
+	enabling network traffic routing and load balancing.
+
+
+what is the use of kube-proxy?
+	Kube-proxy is a crucial network component running on every Kubernetes node that manages
+	network rules to enable service-to-pod communication, acting as a network proxy and load balancer.
+
+
+what is the use of endpoint controller in Kubernetes?
+	In Kubernetes, the Endpoints Controller is a core control loop within the kube-controller-manager
+	 that manages the connection between Services and Pods
+
+
+what is DaemonSet?
+	A DaemonSet in Kubernetes ensures that a copy of a specific pod run on all nodes in the cluster.
+
+
+what is the difference between pv and pvc and storageclass?
+	PV (Persistent Volume):
+		 A piece of storage in the cluster that has been provisioned by an administrator or dynamically provisioned using Storage Classes.
+	PVC (Persistent Volume Claim):
+		A request for storage by a user (pod).
+		Allows developers to request specific storage size and access modes (ReadWriteOnce, ReadOnlyMany, ReadWriteMany) without knowing the underlying storage details.
+	StorageClass:
+		A blueprint for dynamic storage provisioning.
+		Dynamically creates PVs when a PVC requests it, eliminating the need for manual PV creation.
+
+
+what is the difference between liveliness probe, readiness probe and startup probe ?
+	Liveness probes check if a container is running (restarts it if dead), 
+	Readiness probes check if a container is ready to accept traffic (removes it from service if not), 
+	Startup probes check if an app has finished initializing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=========================================================================================================
+
+
+
+
+
+
