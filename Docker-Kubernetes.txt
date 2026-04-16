@@ -95,7 +95,10 @@ docker network create <name>        # Create new network
 		it is harder to override and is used to treat a container as an executable
 
 
-
+12) Docker Swarm vs. Kubernetes:
+		Swarm: Docker’s native orchestration tool. It is simpler to set up and ideal for smaller deployments.
+		Kubernetes: A more complex and powerful platform offering advanced features like auto-scaling and a 
+					larger ecosystem for production-grade environments
 
 
 
