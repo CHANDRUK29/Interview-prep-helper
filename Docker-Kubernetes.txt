@@ -84,15 +84,17 @@ docker network create <name>        # Create new network
 	    Docker networking is a subsystem that allows containers to communicate with each other, the host machine, 
 	    and external networks like the internet.
 
-10) COPY VS ADD:
+10) COPY VS ADD ?
 		COPY is for straightforward local file transfers from the host to the container.
 		ADD can also fetch files from URLs and automatically extract compressed archives (tar, gzip)
 
 
-11) CMD VS ENTRYPOINT:
-		CMD provides default arguments that can be easily overridden during docker run.
-		ENTRYPOINT sets the primary command that will always execute; 
-		it is harder to override and is used to treat a container as an executable
+11) RUN VS CMD VS ENTRYPOINT?
+	RUN: Mainly used to build images and install applications and packages, 
+		 RUN builds a new layer over an existing image by committing the results.
+	CMD: Sets default parameters that can be overridden from the Docker Command Line 
+		 Interface (CLI) when a container is running.
+	ENTRYPOINT: Default parameters that cannot be overridden when Docker Containers run with CLI parameters.
 
 
 12) Docker Swarm vs. Kubernetes:
