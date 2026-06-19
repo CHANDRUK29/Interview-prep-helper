@@ -389,7 +389,17 @@ src/
     c) Terms in Redux Toolkit
             Store: Store is the central place where the entire application state is maintained.
             State : State is the data stored inside the Redux store that represents the current application data.
-            Action: 
+            Action: An action is an object that describes what change should happen in the state.
+            Reducer : A reducer is a function that receives the current state and action, then returns the updated state.
+            Slice : A slice is a collection of Redux logic for a specific feature, including state, reducers, and actions.
+            createSlice : A function that simplifies creating reducers and actions together.
+            Dispatch : Dispatch sends an action to Redux store.
+            Selector : Selector is a function used to read data from Redux store.
+            Provider : Provider makes the Redux store available to React components.
+            configureStore : Creates and configures the Redux store with recommended defaults.
+            Middleware: Middleware sits between dispatching an action and reaching the reducer. It is used for logging, API calls, async operations.
+            createAsyncThunk : Used for handling asynchronous operations like API calls.
+
 
 40) What is OAuth and how does it work?
             OAuth (Open Authorization) is a standard protocol that allows one application to access 
