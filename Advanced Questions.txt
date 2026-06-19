@@ -380,7 +380,16 @@ src/
 | Dependencies     | Props (shallow compare by default) | Dependency array                    |
 
 
+39) B) WorkFlow of Redux Toolkit?
+            → Component dispatches an action 
+            → Slice reducer updates the store 
+            → Store updates state 
+            → Component reads the updated state using selectors and re-renders.
 
+    c) Terms in Redux Toolkit
+            Store: Store is the central place where the entire application state is maintained.
+            State : State is the data stored inside the Redux store that represents the current application data.
+            Action: 
 
 40) What is OAuth and how does it work?
             OAuth (Open Authorization) is a standard protocol that allows one application to access 
